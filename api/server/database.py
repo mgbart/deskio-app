@@ -8,7 +8,7 @@ import motor.motor_asyncio
 
 load_dotenv()
 MONGO_URL = os.getenv('DB_URI')
-CLIENT_PEM = 'app\server\certs\X509-cert-100259875534053013.pem'
+CLIENT_PEM = 'api\server\certs\X509-cert-100259875534053013.pem'
 
 client = motor.motor_asyncio.AsyncIOMotorClient(
     MONGO_URL,
